@@ -1,0 +1,44 @@
+.text-style {
+  font-size: 100px;
+}
+
+.container {
+  width: 100vw;
+  background-color: var(--background-color);
+  height: 100vh;
+}
+
+.line-horizontal {
+  border-top: 10px solid var(--terminal-green-color);
+}
+
+.line-vertical {
+  border-right: solid 10px var(--terminal-green-color);
+  border-left: solid 10px var(--terminal-green-color);
+}
+
+.square {
+  padding: 100px;
+  width: 100px;
+  height: 130px;
+}
+
+.x::after {
+  color: var(--white-color);
+  content: "X";
+}
+
+.zero::after {
+  color: var(--white-color);
+  content: "0";
+}
+
+td:hover {
+  background-color: var(--terminal-green-color);
+}
+
+.disable-user-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

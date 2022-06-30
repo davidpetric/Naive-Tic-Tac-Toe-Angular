@@ -1,0 +1,35 @@
+<table class="container">
+  <h1><span>{{currentPlayer}}</span> Turn</h1>
+  <button (click)="restartGame()">Restart Game</button>
+
+  <tr>
+    <td [ngClass]="{'x':matrix[0] == playerXVal, 'zero':matrix[0] == player0Val}" (click)="onClick(0)"
+      class="square text-style"></td>
+    <td [ngClass]="{'x':matrix[1] == playerXVal, 'zero':matrix[1] == player0Val}" (click)="onClick(1)"
+      class="square text-style line-vertical"></td>
+
+    <td [ngClass]="{'x':matrix[2] == playerXVal, 'zero':matrix[2] == player0Val}" (click)="onClick(2)"
+      class="square text-style">
+    </td>
+  </tr>
+
+  <tr>
+    <td [ngClass]="{'x':matrix[3] == playerXVal, 'zero':matrix[3] == player0Val}" (click)="onClick(3)"
+      class="square text-style line-horizontal"></td>
+
+    <td [ngClass]="{'x':matrix[4] == playerXVal, 'zero':matrix[4] == player0Val}" (click)="onClick(4)"
+      class="square text-style line-horizontal line-vertical"></td>
+
+    <td [ngClass]="{'x':matrix[5] == playerXVal, 'zero':matrix[5] == player0Val}" (click)="onClick(5)"
+      class="square text-style line-horizontal"></td>
+  </tr>
+
+  <tr>
+    <td [ngClass]="{'x':matrix[6] == playerXVal, 'zero':matrix[6] == player0Val}" (click)="onClick(6)"
+      class="square text-style line-horizontal"></td>
+    <td [ngClass]="{'x':matrix[7] == playerXVal, 'zero':matrix[7] == player0Val}" (click)="onClick(7)"
+      class="square text-style line-vertical line-horizontal"></td>
+    <td [ngClass]="{'x':matrix[8] == playerXVal, 'zero':matrix[8] == player0Val}" (click)="onClick(8)"
+      class="square text-style line-horizontal"></td>
+  </tr>
+</table>
